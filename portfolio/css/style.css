@@ -1,0 +1,218 @@
+/* =============================================================================
+   CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+#blocks .article-block a h3:hover{
+  color: #a7dd31
+}
+/* ---- particles.js container ---- */
+
+#particles-js{
+  background-color: rgba(0, 0, 0, 0.89);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:0;
+}
+
+#overlay {
+  top: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.Ontop{
+  z-index: 99;
+  position: relative;
+}
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font: 13px/1.6 "Helvetica Neue", helvetica, verdana, arial, sans-serif;
+  color: #666;
+  margin: 0px;
+  overflow-y: scroll;
+  line-height: 21px;
+}
+img {
+  max-width: 100%;
+}
+
+.cover img {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+/* Start styling for header area*/
+header {
+    padding-top:10px;
+}
+header .container{
+  max-width:980px;
+  display: flex;
+  position: relative;
+}
+header .line {
+  border-bottom: solid 4px #a7dd31;
+  width:100%;
+}
+header .left {
+  width:40%;
+  float:left;
+}
+header .right {
+  width:90%;
+  text-align: right;
+  float: right;
+}
+header .right .fulName{
+  padding-bottom:5px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+header .right .jobDiscription{
+  font-size:15px;
+  font-weight: normal;
+  line-height: 21px;
+}
+header .profileImage {
+  background: url("../img/me.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  width: 140px;
+  height: 100px;
+}
+
+.udacityLogo {
+  background: url("../img/Udacity_logo.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  width: 140px;
+  height: 100px;
+}
+/* End styling for header area*/
+h2.heading {
+  text-transform: uppercase;
+  margin: 1.75rem 0;
+  border-bottom: solid 1px #a7dd31;
+  line-height: 0px;
+  font-weight: normal;
+  color:#666;
+}
+h2.heading span{
+  background: #eee;
+  padding-right:10px;
+}
+.container {
+  max-width:980px;
+  margin: 0 auto;
+  padding:10px 20px;
+}
+/* Start stylying for portfolio items*/
+#blocks {
+  display: flex; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+}
+#blocks .article-block {
+  background: #fff;
+  width: 32%;
+  margin-bottom:2%;
+  text-align: left;
+  box-shadow: 0 2px 0 #D9E1E7;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+#blocks .article-block img{
+  border-radius: 3px 3px 0 0;
+}
+#blocks .article-block .text_block{
+  padding: 1.25rem;
+  text-align: center;
+}
+#blocks .article-block h3 {
+  font-size:18px;
+  color:#444;
+}
+#blocks .article-block:nth-child(3n-1) {
+  margin-right:2%;
+  margin-left:2%;
+}
+/* End stylying for portfolio items*/
+footer {
+  max-width:980px;
+  margin:0 auto;
+  padding:10px 20px;
+}
+/*Media Queries*/
+/*For devices with width between 600px and 850px*/
+@media screen and (min-width: 600px) and (max-width: 850px)  {
+  #blocks .article-block{
+    width:49%;
+  }
+  #blocks .article-block:nth-child(odd) {
+    margin-right:2%;
+    margin-left:0px;
+  }
+  #blocks .article-block:nth-child(even) {
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+/*For devices with width up to 600px*/    
+@media screen and (max-width: 600px)  {
+  #blocks .article-block{
+    width:99%;
+    margin-right:0!important;
+    margin-left:0!important;
+    margin-bottom:20px;
+  }
+}
+
